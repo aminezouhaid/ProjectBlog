@@ -10,6 +10,6 @@
   // URL Root
   define('URLROOT', 'http://localhost/projectBlog');
   // Site Name
-  define('SITENAME', 'My Contacts management');
+  define('SITENAME', 'KtabeK ');
   // App Version
   define('APPVERSION', '1.0.0');

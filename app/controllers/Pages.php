@@ -10,8 +10,8 @@
       }
 
       $data = [
-        'title' => 'My Contacts management',
-        'description' => 'This is the first page of my contacts management application'
+        'title' => 'KtabeK ',
+        'description' => 'This is the first page of KtabeK  application'
       ];
      
       $this->view('pages/index', $data);
