@@ -12,53 +12,28 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <title>Document</title>
 </head>
-<body>
-<form>
-  <div class="form-row">
-    <div class="form-group col-md-6">
+<body style="background-image: url('<?php echo URLROOT; ?>/img/11111.jpg');  background-size:cover;">>
+<form style="height:600px; margin-left:500px;" class="d-flex flex-column  d-flex align-items-center d-flex justify-content-center " action="<?php echo URLROOT ?>/Pages/login " method="post">
+  <div class="form-row"  >
+    <div class="form-group col-md-8"    >
       <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+      <input type="email" name="email" class="form-control email" id="inputEmail4" placeholder="Email">
+      <div class="alert alert-danger custom-alert" style="padding: 5px 10px;margin-bottom: 5px;display: none;">
+                The email can't be Empty
+      </div>
     </div>
-    <div class="form-group col-md-6">
+    <div class="form-group col-md-8">
       <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+      <input type="password"  name="password" class="form-control password" id="inputPassword4" placeholder="Password">
+      <div class="alert alert-danger custom-alert" style="padding: 5px 10px;margin-bottom: 5px;display: none;">
+                The password can't be less than <strong>5</strong> charracters
+      </div>
     </div>
   </div>
-  <div class="form-group">
-    <label for="inputAddress">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress2">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">City</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">State</label>
-      <select id="inputState" class="form-control">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Check me out
-      </label>
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
+  
+  <button style="background-color:#c3ab79; "   onclick="myFunction()" type="submit" class="btn btn-primary">Sign in</button>
 </form>
+
 </body>
 </html>
 

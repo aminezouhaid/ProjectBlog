@@ -1,5 +1,6 @@
-   <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
-  <div class="container">
+ <div class="container">
+   <nav class="navbar navbar-light" style="background-color:#e1e2e1;" >
+ 
       <a class="navbar-brand" href="<?php echo URLROOT; ?>"><?php echo SITENAME; ?></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,14 +27,13 @@
               <a class="nav-link" href="<?php echo URLROOT; ?>/users/logout">Logout</a>
             </li>
           <?php else : ?>
+        
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo URLROOT; ?>/users/register">Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?php echo URLROOT; ?>/users/login">Login</a>
+              <a class="nav-link" href="<?php echo URLROOT; ?>/Pages/login">Login</a>
             </li>
           <?php endif; ?>
         </ul>
       </div>
-    </div>
+
   </nav>
+    </div>
